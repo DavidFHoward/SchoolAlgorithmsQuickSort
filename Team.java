@@ -23,14 +23,7 @@ public class Team implements Comparable
         this.loses = loses;
         this.points = 3*wins + draws;
     }
-    public Team(Team team)
-    {
-        this.name = team.name;
-        this.wins = team.wins;
-        this.draws = team.draws;
-        this.loses = team.loses;
-        this.points = team.points;
-    }
+
     /**
      * tells if this Team Object equals the other Object
      * @return true if the Objects are equal; false otherwise.

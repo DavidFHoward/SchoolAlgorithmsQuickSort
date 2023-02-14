@@ -15,7 +15,7 @@ public class LeagueRankings
 
     public static void swap(List<Team> teams, int i, int j)
     {
-        Team temp = new Team(teams.get(i));
+        Team temp = teams.get(i);
         teams.set(i, teams.get(j));
         teams.set(j, temp);
         
@@ -26,7 +26,7 @@ public class LeagueRankings
         Team pivotItem = teams.get(low);
         int pivotPoint;
         j = low;
-        for (i = low + 1; i < high; i++)
+        for (i = low + 1; i <= high; i++)
         {
             if(pivotItem.compareTo(teams.get(i)) < 0)
             {
@@ -79,7 +79,7 @@ public class LeagueRankings
         
         read("input.txt", teams);
         quickSort(teams, 0, teams.size() -1);
-        System.out.println(teams.get(0).compareTo(teams.get(teams.size() - 1)));
+
 
         for(int i = 0; i < teams.size(); i++)
         {
