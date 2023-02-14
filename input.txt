@@ -1,14 +1,11 @@
-Bears
-4 0 4
-Chiefs 
-3 1 4
-Alpacas 
-0 0 8
-Trees 
-0 0 8
-Ants 
-5 1 2
-Zepplins
-8 0 0
-Aears
-3 3 4
+10
+Alexandria, 10, 4, 6
+Baton Rouge, 8, 6, 7
+Hammond, 9, 5, 8
+Lake Charles, 4, 6, 11
+Monroe City, 14, 3, 4
+Monroe United, 13, 3, 5
+Shreveport, 16, 2, 2
+New Orleans, 10, 10, 1
+Start, 4, 3, 14
+Sterlington, 12, 3, 7

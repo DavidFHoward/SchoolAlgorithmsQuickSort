@@ -56,19 +56,24 @@ public class LeagueRankings
         Scanner in = new Scanner(new File(fileName));
         Team team;
         String name;
+        String stupid;
         int wins;
         int draws;
         int loses;
+        int numberOfTeams = in.nextInt();
+        in.nextLine();
 
         while(in.hasNextLine())
         {
-            name = in.nextLine();
+            in.useDelimiter(", ");
+            name = in.next();
             wins = in.nextInt();
             draws = in.nextInt();
-            loses = in.nextInt();
+            stupid = in.nextLine();
+            loses = Integer.parseInt(stupid.substring(2));
             team = new Team(name, wins, draws, loses);
             teams.add(team);
-            in.nextLine();
+            
 
         }
         in.close();
