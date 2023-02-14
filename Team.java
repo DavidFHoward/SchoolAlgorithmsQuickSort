@@ -3,11 +3,11 @@
  */
 public class Team implements Comparable
 {
-    String name;
-    int wins;
-    int draws;
-    int loses;
-    int points;
+    private String name;
+    private int wins;
+    private int draws;
+    private int loses;
+    private int points;
     /**
      * Simple constructor for a Team Object; handles point assignment automatically
      * @param name the name of the team
@@ -22,6 +22,14 @@ public class Team implements Comparable
         this.draws = draws;
         this.loses = loses;
         this.points = 3*wins + draws;
+    }
+    public Team(Team team)
+    {
+        this.name = team.name;
+        this.wins = team.wins;
+        this.draws = team.draws;
+        this.loses = team.loses;
+        this.points = team.points;
     }
     /**
      * tells if this Team Object equals the other Object

@@ -1,0 +1,12 @@
+Bears
+4 0 4
+Chiefs 
+3 1 4
+Alpacas 
+0 0 8
+Trees 
+0 0 8
+Ants 
+5 1 2
+Zepplins
+8 0 0
