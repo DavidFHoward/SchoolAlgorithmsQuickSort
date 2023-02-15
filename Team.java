@@ -1,3 +1,9 @@
+/* Name: Olivia Howard
+ * Class: CSCI 3005 Algorithms
+ * Instructor: Dr. Smith
+ * Date due: 22 February 2023
+ */
+
 /**
  * This Team Object that implements the Comparable interface is used in LeagueRankings.java to construct Team objects for Comparison and Sorting
  */
@@ -25,7 +31,7 @@ public class Team implements Comparable
     }
 
     /**
-     * tells if this Team Object equals the other Object
+     * tells if this Team Object equals the other Object based on points
      * @return true if the Objects are equal; false otherwise.
      */
     @Override
@@ -51,11 +57,11 @@ public class Team implements Comparable
             throw new ClassCastException();
         
         Team team = (Team) other;
-        if(!this.equals(team))
-            return this.points - team.points;
-        else if (!(this.wins == team.wins))
-            return this.wins - team.wins; 
-        return this.alphabetOrder(team);
+        if(!this.equals(team)) // if the teams don't have the same number of points
+            return this.points - team.points; // return the difference
+        else if (!(this.wins == team.wins))// otherwise if the teams dont have the same number of points
+            return this.wins - team.wins; // return the difference of wins
+        return this.alphabetOrder(team); // if the team are equal in points and wins, just give a number to indicate alphabetical order
     }
     /**
      * This method deturmines the alphabetical ordering of a team according to the name
@@ -65,11 +71,11 @@ public class Team implements Comparable
     public int alphabetOrder(Team team)
     {   
         int difference = 0;
-        for (int i = 0; difference == 0 && i < this.name.length() && i < team.name.length(); i++)
+        for (int i = 0; difference == 0 && i < this.name.length() && i < team.name.length(); i++) // check each matching index up to the last index of the sortest name
         {
            difference = team.name.toLowerCase().charAt(i) - this.name.toLowerCase().charAt(i);
         }
-        return difference;
+        return difference; //the difference between the first characters in the name that are different. 0 if there is no different character
 
     }
 
