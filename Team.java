@@ -80,6 +80,6 @@ public class Team implements Comparable
     @Override
     public String toString()
     {
-        return name + " | wins: " + wins + " | draws: " + draws + " | loses: " + loses + " | points: " + points;
+        return String.format("%-15s%2d %2d %2d  %2d", name, wins, draws, loses, points);
     }
 }

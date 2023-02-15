@@ -56,7 +56,7 @@ public class LeagueRankings
         Scanner in = new Scanner(new File(fileName));
         Team team;
         String name;
-        String stupid;
+        String tail;
         int wins;
         int draws;
         int loses;
@@ -69,8 +69,8 @@ public class LeagueRankings
             name = in.next();
             wins = in.nextInt();
             draws = in.nextInt();
-            stupid = in.nextLine();
-            loses = Integer.parseInt(stupid.substring(2));
+            tail = in.nextLine();
+            loses = Integer.parseInt(tail.substring(2));
             team = new Team(name, wins, draws, loses);
             teams.add(team);
             
