@@ -1,4 +1,4 @@
-/* Name: Olivia Howard
+/* Name: David Howard
  * Class: CSCI 3005 Algorithms
  * Instructor: Dr. Smith
  * Date due: 22 February 2023
